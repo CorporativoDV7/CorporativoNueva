@@ -201,11 +201,11 @@
         align-items: center;
     }
 }
-    @media screen and (max-width: 768px) {
+   @media screen and (max-width: 768px) {
     .title {
         font-size: 30px;
         display: block;
-        margin: 120px auto 20px;  /* Asegura el centrado y evita el solapamiento con el logo */
+        margin: 120px auto 20px;  /* Ajustamos el margen para no solaparse con el logo */
         padding: 0 20px;
         text-align: center;  /* Asegura que el texto se centre */
         width: 100%;  /* Asegura que el título ocupe todo el ancho disponible */
@@ -214,10 +214,10 @@
     .logo {
         width: 120px;
         height: 120px;
-        position: absolute;  /* Cambié a absoluto para que no se solape con el título */
-        top: 20px;  /* Ajuste para que no se superponga con el título */
+        position: absolute;
+        top: 180px;  /* Coloca el logo debajo del título, asegurando que no se solapen */
         left: 50%;
-        transform: translateX(-50%); /* Centra el logo */
+        transform: translateX(-50%); /* Centra el logo horizontalmente */
     }
 }
     </style>
