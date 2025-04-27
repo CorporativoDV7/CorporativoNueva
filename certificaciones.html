@@ -63,17 +63,31 @@
         }
 
         header {
-            font-size: 40px;
-            font-weight: 600;
-            color: #004d7f;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            display: inline-block;
-            margin-top: 70px;
-            position: relative;
-            overflow: hidden;
-            animation: typing 4s steps(30) 1s 1 normal both, moveText 3s ease-in-out infinite alternate;
-        }
+    font-size: 5vw; /* Ajuste dinámico según el ancho de la ventana */
+    font-weight: 600;
+    color: #004d7f;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 70px;
+    position: relative;
+    overflow: hidden;
+    animation: typing 4s steps(30) 1s 1 normal both, moveText 3s ease-in-out infinite alternate;
+}
+
+/* Consultas de medios para ajustar el tamaño en dispositivos pequeños */
+@media (max-width: 768px) {
+    header {
+        font-size: 8vw; /* Más grande para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 10vw; /* Aún más grande para pantallas muy pequeñas */
+    }
+}
+
 
         @keyframes typing {
             from {
