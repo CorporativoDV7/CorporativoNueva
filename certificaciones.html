@@ -62,20 +62,18 @@
             }
         }
 
-        /* Estilos generales */
-header {
-    font-size: 40px;
-    font-weight: 600;
-    color: #004d7f;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: inline-block;
-    margin-top: 70px;
-    position: relative;
-    overflow: hidden;
-    animation: typing 4s steps(30) 1s 1 normal both, moveText 3s ease-in-out infinite alternate;
-}
-
+        header {
+            font-size: 40px;
+            font-weight: 600;
+            color: #004d7f;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-top: 70px;
+            position: relative;
+            overflow: hidden;
+            animation: typing 4s steps(30) 1s 1 normal both, moveText 3s ease-in-out infinite alternate;
+        }
 
         @keyframes typing {
             from {
@@ -213,27 +211,16 @@ header {
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
 
-       /* Estilos generales para el logo */
-.logo {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 768px) {
-    .logo {
-        display: none; /* Ocultar el logo en dispositivos con pantallas pequeñas */
-    }
-    
-    header {
-        font-size: 28px; /* Reducir el tamaño del título */
-        margin-top: 120px; /* Aumentar el margen superior para no tapar el logo */
-    }
-}
-
+        .logo {
+            position: fixed;
+            top: 10px;
+            left: 15px;
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
 
         @keyframes fadeIn {
             from {
@@ -535,3 +522,4 @@ document.getElementById("myModal").addEventListener('click', function(event) {
 
 </body>
 </html>
+
