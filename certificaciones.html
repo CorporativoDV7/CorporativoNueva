@@ -227,16 +227,22 @@ header {
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
         }
 
-        .logo {
-            position: fixed;
-            top: 10px;
-            left: 15px;
-            width: 170px;
-            height: 170px;
-            border-radius: 50%;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
+        /* Estilos generales para el logo */
+.logo {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .logo {
+        display: none; /* Ocultar el logo en dispositivos con pantallas pequeñas */
+    }
+}
+
 
         @keyframes fadeIn {
             from {
