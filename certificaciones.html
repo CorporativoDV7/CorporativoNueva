@@ -352,6 +352,23 @@
             transform: translateY(0);
         }
     }
+        @media (max-width: 768px) {
+    /* Para dispositivos móviles, bajamos el header y el contenido */
+    header {
+        margin-top: 120px; /* Aumenta el espacio superior para mover el título hacia abajo */
+    }
+
+    .intro-eslogan {
+        top: 20vh; /* Ajusta la posición de la capa de eslogan para que esté más abajo */
+        font-size: 2em; /* Ajustamos el tamaño del texto del eslogan para móviles */
+    }
+
+    section {
+        padding: 15px;
+        margin-top: 40px; /* Espacio entre el título y las secciones */
+    }
+}
+
 
     </style>
 </head>
