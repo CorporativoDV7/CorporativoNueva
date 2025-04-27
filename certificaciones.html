@@ -76,36 +76,22 @@ header {
     animation: typing 4s steps(30) 1s 1 normal both, moveText 3s ease-in-out infinite alternate;
 }
 
-/* Media query para dispositivos móviles */
 @media screen and (max-width: 768px) {
     header {
         font-size: 28px; /* Reducir el tamaño del título */
-        margin-top: 120px; /* Aumentar el margen superior para no tapar el logo */
+        margin-top: 150px; /* Aumentar el margen superior para no tapar el logo */
     }
 
-    /* Estilos generales para el logo */
-.logo {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 768px) {
     .logo {
-        display: none; /* Ocultar el logo en dispositivos con pantallas pequeñas */
+        width: 120px; /* Reducir el tamaño del logo en dispositivos móviles */
+        height: 120px;
+        top: 10px;
     }
-    
-    header {
-        font-size: 28px; /* Reducir el tamaño del título */
-        margin-top: 120px; /* Aumentar el margen superior para no tapar el logo */
+
+    .intro-eslogan {
+        top: 130px; /* Ajustar la posición de la introducción en dispositivos móviles */
     }
 }
-
-
-
         @keyframes typing {
             from {
                 width: 0;
