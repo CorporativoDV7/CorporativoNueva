@@ -36,15 +36,15 @@
         }
 
         .title {
-            font-size: 45px;
-            font-weight: 600;
-            color: #1E88E5;
-            display: inline-block;
-            margin-top: 70px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            position: relative;
-        }
+    font-size: 45px;
+    font-weight: 600;
+    color: #1E88E5;
+    display: inline-block;
+    margin-top: 70px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+}
 
         .title::after {
             content: "";
@@ -202,30 +202,21 @@
     }
 }
     @media screen and (max-width: 768px) {
-    .timeline-container::before {
-        left: 20px;
-    }
-    .timeline-item {
-        width: calc(100% - 40px);
-        margin-left: 40px;
-        text-align: left;
-        padding-left: 30px;
-    }
-    .timeline-item::before {
-        left: -30px;
-    }
     .title {
         font-size: 30px;
         display: block;
-        margin: 0 auto;
+        margin: 120px auto 20px;  /* Aumentamos el margen superior para que no se tape con el logo */
         padding: 0 20px;
+        text-align: center;  /* Asegura que el texto se centre */
     }
-    .title span {
-        display: inline;
-    }
+    
     .logo {
         width: 120px;
         height: 120px;
+        position: absolute;  /* Cambié a absoluto para que no se solape con el título */
+        top: 20px;  /* Ajuste para que no se superponga con el título */
+        left: 50%;
+        transform: translateX(-50%); /* Centra el logo */
     }
 }
     </style>
