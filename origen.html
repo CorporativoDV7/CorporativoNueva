@@ -201,6 +201,21 @@
         align-items: center;
     }
 }
+        @media screen and (max-width: 768px) {
+    .timeline-container::before {
+        left: 20px; /* Mueves un poquito el eje */
+    }
+    .timeline-item {
+        width: calc(100% - 40px);
+        margin-left: 40px;
+        text-align: left;
+        padding-left: 30px;
+    }
+    .timeline-item::before {
+        left: -30px;
+    }
+}
+
     </style>
 </head>
 <body>
